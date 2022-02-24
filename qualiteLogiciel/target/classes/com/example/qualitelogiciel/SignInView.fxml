@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.qualitelogiciel.controller.SignIn">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="signInButton" layoutX="155.0" layoutY="314.0" mnemonicParsing="false" onAction="#signIn" style="-fx-background-color: #ffc900;" text="Sign In">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="alreadyHaveAccountButton" layoutX="132.0" layoutY="367.0" mnemonicParsing="false" onAction="#alreadyHaveAccount" style="-fx-background-color: #ffc900;" text="Already have an account?" />
+            <Label fx:id="usernameLabel" layoutX="47.0" layoutY="14.0" text="Username" textFill="#fcc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="206.0" layoutY="19.0" promptText="username" />
+            <Label fx:id="mailLabel" layoutX="48.0" layoutY="44.0" text="Mail" textFill="#fcc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mailField" layoutX="207.0" layoutY="49.0" promptText="mail" />
+            <Label fx:id="phoneLabel" layoutX="49.0" layoutY="111.0" text="Phone Number" textFill="#fcc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phoneField" layoutX="207.0" layoutY="116.0" promptText="phone number" />
+            <PasswordField fx:id="passwordField" layoutX="207.0" layoutY="82.0" promptText="password" />
+            <Label fx:id="passwordLabel" layoutX="48.0" layoutY="80.0" text="Password" textFill="#fcc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="roadLabel" layoutX="51.0" layoutY="141.0" text="Road" textFill="#fcc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="roadField" layoutX="206.0" layoutY="144.0" promptText="road" />
+            <Label fx:id="pcLabel" layoutX="53.0" layoutY="171.0" text="Postal code" textFill="#fcc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pcField" layoutX="206.0" layoutY="174.0" promptText="postal code" />
+            <Label fx:id="cityLabel" layoutX="55.0" layoutY="201.0" text="City" textFill="#fcc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cityField" layoutX="208.0" layoutY="204.0" promptText="city" />
+            <DatePicker fx:id="birthdayPicker" layoutX="208.0" layoutY="235.0" prefHeight="25.0" prefWidth="152.0" promptText="11/06/1999" />
+            <Label fx:id="birthdayLabel" layoutX="57.0" layoutY="233.0" text="Birthday" textFill="#fcc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="notCorrectInformationsLabel" layoutX="82.0" layoutY="285.0" prefHeight="17.0" prefWidth="225.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <ImageView fitHeight="382.0" fitWidth="190.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@soutient_scolaire.jpeg" />
+         </image>
+      </ImageView>
+   </left>
+</BorderPane>
